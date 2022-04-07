@@ -298,7 +298,7 @@ SelectionFilterPlugin::initParameterList(const QAction* action, const MeshModel&
 			"Use ViewPoint from Mesh Camera",
 			"Uses the ViewPoint from the camera associated to the current mesh\n if there is no "
 			"camera, an error occurs"));
-		parlst.addParam(RichDirection(
+		parlst.addParam(RichPosition(
 			"viewpoint",
 			Point3f(0.0f, 0.0f, 0.0f),
 			"ViewPoint",
@@ -387,7 +387,7 @@ SelectionFilterPlugin::initParameterList(const QAction* action, const MeshModel&
 			tr("Max Quality"),
 			tr("Maximum acceptable quality value")));
 		parlst.addParam(RichBool(
-			"faceSelInclusive",
+			"Inclusive",
 			true,
 			"Inclusive Face Sel.",
 			"If true only the faces with <b>all</b> the vertices within the specified range are "

@@ -47,6 +47,7 @@
 QProgressBar *MainWindow::qb;
 
 MainWindow::MainWindow() :
+		filterDockDialog(nullptr),
 		searcher(meshlab::actionSearcherInstance()),
 		httpReq(this),
 		gpumeminfo(NULL),
@@ -127,7 +128,6 @@ MainWindow::MainWindow() :
 	createToolBars();
 	createMenus();
 	gpumeminfo = new vcg::QtThreadSafeMemoryInfo(mwsettings.maxgpumem);
-	filterDockDialog = nullptr;
 	setAcceptDrops(true);
 	mdiarea->setAcceptDrops(true);
 	setWindowTitle(MeshLabApplication::shortName());
@@ -730,7 +730,7 @@ void MainWindow::fillFilterMenu()
 	filterMenu->addMenu(filterMenuOther);
 
 
-	//this is used just to fill the menus with alhabetical order
+	//this is used just to fill the menus with alphabetical order
 	std::map<QString, FilterPlugin*> mapFilterPlugins;
 	
 	//populate the map
