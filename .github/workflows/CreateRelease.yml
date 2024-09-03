@@ -246,22 +246,22 @@ jobs:
 
     #Download Linux Packages
     - name: Download Linux ZIP
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4.1.7
       with:
         name: meshlab_linux_portable
         path: meshlab_linux_portable
     - name: Download Linux ZIP-d
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4.1.7
       with:
         name: meshlab_linux_portable_double
         path: meshlab_linux_portable_double
     - name: Download Linux AppImage
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4.1.7
       with:
         name: meshlab_linux_appimage
         path: meshlab_linux_appimage
     - name: Download Linux AppImage-d
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4.1.7
       with:
         name: meshlab_linux_appimage_double
         path: meshlab_linux_appimage_double
@@ -281,22 +281,22 @@ jobs:
 
     #Download MacOS Package
     - name: Download MacOS DMG
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4.1.7
       with:
         name: meshlab_macos_dmg
         path: meshlab_macos_dmg
     - name: Download MacOS DMG-d
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4.1.7
       with:
         name: meshlab_macos_dmg_double
         path: meshlab_macos_dmg_double
     - name: Download MacOS Portable
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4.1.7
       with:
         name: meshlab_macos_portable
         path: meshlab_macos_portable
     - name: Download MacOS Portable-d
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4.1.7
       with:
         name: meshlab_macos_portable_double
         path: meshlab_macos_portable_double
@@ -314,22 +314,22 @@ jobs:
 
     #Download Windows Packages
     - name: Download Windows ZIP
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4.1.7
       with:
         name: meshlab_windows_portable
         path: meshlab_windows_portable
     - name: Download Windows ZIP-d
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4.1.7
       with:
         name: meshlab_windows_portable_double
         path: meshlab_windows_portable_double
     - name: Download Windows Installer
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4.1.7
       with:
         name: meshlab_windows_installer
         path: meshlab_windows_installer
     - name: Download Windows Installer-d
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4.1.7
       with:
         name: meshlab_windows_installer_double
         path: meshlab_windows_installer_double
